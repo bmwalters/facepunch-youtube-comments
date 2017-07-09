@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Facepunch Tube",
+  "short_name": "Facepunch Tube",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Zerf",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": [
+        "script.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "https://www.youtube.com/watch*",
+    "https://lab.facepunch.com/api/*"
+  ]
+}
